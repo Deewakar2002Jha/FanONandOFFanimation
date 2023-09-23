@@ -1,0 +1,49 @@
+div[data-dj="myfan"]{
+    /* border: 1px solid #4815; */
+}
+
+.Fanbody{
+    width: 400px;
+    height:300px;
+    background-image:url("../img/fan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    animation-name: fan;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state:paused;
+}
+.ButtonBody{
+    text-align: center;
+    width: 150px;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.1);
+    background: black;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.MyButton{
+    border: none;
+    margin-left: 10px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+    background:#e6dfdf
+}
+.word{
+    text-align: center;
+    font-size: 2rem;
+    color:red;
+    font-weight: bolder;
+    font-style: italic;
+}
+@keyframes fan {
+    0%{
+        transform:rotatez(0deg);
+    }
+    100%{
+        transform:rotateZ(359deg);
+    }
+    
+}
